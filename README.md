@@ -7,6 +7,9 @@ Plain HTML, CSS and JavaScript. No build step.
     python3 -m http.server 8000
 then open http://localhost:8000
 
+## Brand identity
+`brand/index.html` is the brand presentation (animated logo, colors, fonts, templates) with downloads in `brand/downloads/`. Open it at `/brand/` on the live site.
+
 ## Structure
 - `index.html`: all pages (hash-routed: #home, #story, #pastor, #first-lady, #ministries, #discipleship, #watch, #events, #community, #give, #connect)
 - `css/style.css`, `js/app.js`

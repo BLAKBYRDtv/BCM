@@ -13,6 +13,6 @@ then open http://localhost:8000
 - `img/`: optimized photos and logo
 
 ## Before launch
-- Connect the Connect-page form to a real inbox or form service
+- Confirm the contact email domain matches the church domain (info@believerschoiceministries.org)
 - Add online giving details, contact info, and service times
 - Confirm ministry descriptions with Pastor Derek

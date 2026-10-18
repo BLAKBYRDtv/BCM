@@ -266,6 +266,17 @@
     var t = document.getElementById(b.getAttribute('data-scroll')); if (t) t.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
   });
 
+  var cb = $('#copyEmail');
+  if (cb) cb.addEventListener('click', function () {
+    var note = $('#copyNote'), t = 'info@believerschoiceministries.org';
+    function done(m) { note.textContent = m; setTimeout(function () { note.textContent = ''; }, 2500); }
+    function fallback() {
+      var r = document.createRange(), h = document.querySelector('#connectGrid h2'); r.selectNodeContents(h);
+      var sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); done('Address selected. Press copy.');
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(function () { done('Copied'); }, fallback); else fallback();
+  });
+
   /* ---------- go ---------- */
   document.body.addEventListener('click', function (e) {
     var a = e.target.closest && e.target.closest('a[href^="#"]');

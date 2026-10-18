@@ -594,21 +594,24 @@
   <section class="sec" style="padding-top:30px">
     <div class="wrap" style="display:grid;grid-template-columns:7fr 4fr;gap:clamp(30px,6vw,90px)" id="connectGrid">
       <div>
-        <form class="form rv" id="inviteForm" novalidate>
-          <div class="two"><div class="field"><label for="fn">First name</label><input id="fn" name="fn" autocomplete="given-name" required></div><div class="field"><label for="ln">Last name</label><input id="ln" name="ln" autocomplete="family-name"></div></div>
-          <div class="two"><div class="field"><label for="em">Email</label><input id="em" name="em" type="email" autocomplete="email" required></div><div class="field"><label for="ph">Phone (optional)</label><input id="ph" name="ph" type="tel" autocomplete="tel"></div></div>
-          <div class="field"><label for="re">I would like to</label><select id="re" name="re"><option>Receive an invitation to the inaugural service</option><option>Submit a prayer request</option><option>Join new members orientation</option><option>Learn about ministries</option><option>Volunteer or serve</option><option>Ask a general question</option></select></div>
-          <div class="field"><label for="ms">Message (optional)</label><textarea id="ms" name="ms"></textarea></div>
-          <div><button type="submit" class="btn gold" data-magnet>Send request <span class="arr"></span></button><p class="note" id="formErr" role="alert" style="color:#ffb0b0"></p></div>
-        </form>
-        <div class="thanks" id="thanks" hidden><h3 class="gold-text">Thank you.</h3><p id="thanksMsg">We are grateful you reached out.</p></div>
-      </div>
+        <div class="rv">
+          <div class="eyebrow">Email us</div>
+          <h2 class="h2" style="margin:18px 0 8px;font-size:clamp(26px,3.4vw,46px);word-break:break-word;user-select:all">info@believerschoiceministries.org</h2>
+          <div class="row" style="margin:16px 0 34px"><button type="button" class="btn line" id="copyEmail" data-magnet>Copy email address</button><span class="note" id="copyNote" role="status"></span></div>
+          <p class="lead" style="margin-bottom:26px">Tap a button below and your email app opens with the message started. If nothing opens, copy the address and write to us from any email account.</p>
+          <div class="how" style="grid-template-columns:1fr 1fr;margin-top:0">
+            <a class="card" data-glow data-hover href="mailto:info@believerschoiceministries.org?subject=Invitation%20request%3A%20Inaugural%20Sunday%20Service&amp;body=Hello%20Believers%20Choice%20Ministries%2C%5Cn%5CnI%20would%20like%20an%20invitation%20to%20the%20inaugural%20service%20on%20Sunday%2C%20November%201%20at%2011%3A00%20AM%20ET.%5Cn%5CnName%3A%5CnPhone%20%28optional%29%3A%5Cn"><small>Most popular</small><h3 style="font-size:26px">Request an invitation</h3><p>For the Nov 1 Zoom service.</p></a>
+            <a class="card" data-glow data-hover href="mailto:info@believerschoiceministries.org?subject=Prayer%20request&amp;body=Hello%20Believers%20Choice%20Ministries%2C%5Cn%5CnPlease%20pray%20for%3A%5Cn%5CnName%20%28optional%29%3A%5Cn"><small>Pray with us</small><h3 style="font-size:26px">Prayer request</h3><p>Share what we can pray about.</p></a>
+            <a class="card" data-glow data-hover href="mailto:info@believerschoiceministries.org?subject=New%20members%20orientation&amp;body=Hello%20Believers%20Choice%20Ministries%2C%5Cn%5CnI%20would%20like%20to%20join%20new%20members%20orientation.%5Cn%5CnName%3A%5CnPhone%20%28optional%29%3A%5Cn"><small>Get started</small><h3 style="font-size:26px">New members orientation</h3><p>Begin the discipleship path.</p></a>
+            <a class="card" data-glow data-hover href="mailto:info@believerschoiceministries.org?subject=Question%20or%20how%20I%20can%20serve&amp;body=Hello%20Believers%20Choice%20Ministries%2C%5Cn%5Cn"><small>Say hello</small><h3 style="font-size:26px">Questions or serving</h3><p>Ask a question or offer to help.</p></a>
+          </div>
+        </div>
       <aside class="rv">
         <div class="card" style="padding:34px"><small>Where</small><h3 style="font-size:28px">Fayetteville, Georgia</h3><p>Believers Choice Ministries, Inc.</p>
           <hr style="border:0;border-top:1px solid var(--line);margin:24px 0">
           <small>Inaugural service</small><h3 style="font-size:28px">Nov 1 &middot; 11 AM ET</h3><p>Online via Zoom. Invitation only.</p>
           <hr style="border:0;border-top:1px solid var(--line);margin:24px 0">
-          <small>Email</small><h3 style="font-size:22px;word-break:break-word;user-select:all">info@believerschoiceministries.org</h3><p><a href="mailto:info@believerschoiceministries.org" data-hover style="color:var(--gold-hi)">Send us an email &rarr;</a></p></div>
+          <small>Email</small><h3 style="font-size:22px;word-break:break-word;user-select:all">info@believerschoiceministries.org</h3></div>
       </aside>
     </div>
   </section>

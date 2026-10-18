@@ -16,3 +16,5 @@ then open http://localhost:8000
 - Confirm the contact email domain matches the church domain (info@believerschoiceministries.org)
 - Add online giving details, contact info, and service times
 - Confirm ministry descriptions with Pastor Derek
+- Set `og:image` in `index.html` to the full URL of `img/og-share.png` once the domain is live (link previews need an absolute address)
+- Phone number and street address are intentionally left off until the church confirms them

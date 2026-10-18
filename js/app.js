@@ -261,6 +261,11 @@
     burst(innerWidth / 2, innerHeight / 2);
   });
 
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('[data-scroll]'); if (!b) return;
+    var t = document.getElementById(b.getAttribute('data-scroll')); if (t) t.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+  });
+
   /* ---------- go ---------- */
   document.body.addEventListener('click', function (e) {
     var a = e.target.closest && e.target.closest('a[href^="#"]');

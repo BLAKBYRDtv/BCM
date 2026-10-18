@@ -1,0 +1,18 @@
+# Believers Choice Ministries website
+
+Launch site for Believers Choice Ministries, Inc. (Fayetteville, Georgia).
+Plain HTML, CSS and JavaScript. No build step.
+
+## Run locally
+    python3 -m http.server 8000
+then open http://localhost:8000
+
+## Structure
+- `index.html`: all pages (hash-routed: #home, #story, #pastor, #first-lady, #ministries, #discipleship, #watch, #events, #community, #give, #connect)
+- `css/style.css`, `js/app.js`
+- `img/`: optimized photos and logo
+
+## Before launch
+- Connect the Connect-page form to a real inbox or form service
+- Add online giving details, contact info, and service times
+- Confirm ministry descriptions with Pastor Derek

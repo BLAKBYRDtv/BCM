@@ -1,0 +1,546 @@
+<title>Believers Choice Ministries</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css" charset="utf-8">
+<script>document.documentElement.classList.add('js')</script>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="cross" viewBox="0 0 32 32"><path d="M13 1h6v9h9v6h-9v15h-6V16H4v-6h9z" fill="#f8e3a0" stroke="#d9ac45" stroke-width="1.2" stroke-linejoin="round"/><path d="M14.4 3v9H6v2.6h8.4V29h3.2V14.6H26V12h-8.4V3z" fill="#fff8dc" opacity=".55"/></symbol>
+</svg>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div id="cur" aria-hidden="true"><div class="ring"></div><svg><use href="#cross"/></svg></div>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a href="#home" class="brand" aria-label="Believers Choice Ministries home">
+      <img src="img/emblem.png" alt="">
+      <span>Believers Choice<small>Ministries</small></span>
+    </a>
+    <nav class="navlinks" aria-label="Primary">
+      <a href="#story" data-nav="story">Our Story</a>
+      <a href="#ministries" data-nav="ministries">Ministries</a>
+      <a href="#watch" data-nav="watch">Watch</a>
+      <a href="#events" data-nav="events">Events</a>
+      <a href="#give" data-nav="give">Give</a>
+    </nav>
+    <div class="row" style="gap:12px;flex-wrap:nowrap">
+      <a href="#connect" class="btn gold hide-sm" style="padding:12px 22px;font-size:12px">Join Us Nov 1</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu"><span>Menu</span><i></i></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" role="dialog" aria-label="Site menu">
+  <button class="menu-close" id="menuClose">Close &times;</button>
+  <div class="menu-grid">
+    <nav class="menu-main" aria-label="All pages">
+      <a href="#home"><small>Start</small>Home</a>
+      <a href="#story"><small>About</small>Our Story</a>
+      <a href="#pastor"><small>About</small>Pastor Derek Griffin</a>
+      <a href="#first-lady"><small>About</small>First Lady Lisa Griffin</a>
+      <a href="#ministries"><small>Grow</small>Ministries</a>
+      <a href="#discipleship"><small>Grow</small>Discipleship</a>
+      <a href="#watch"><small>Online</small>Watch</a>
+      <a href="#events"><small>Gather</small>Events</a>
+      <a href="#community"><small>Serve</small>Community</a>
+      <a href="#give"><small>Sow</small>Give</a>
+      <a href="#connect"><small>Reach</small>Connect</a>
+    </nav>
+    <aside class="menu-side">
+      <div class="blk"><h4>Inaugural Service</h4><p style="color:#fff;font-size:20px">Sunday, November 1, 2026<br>11:00 AM ET &middot; Online via Zoom</p><a href="#connect" style="color:var(--gold-hi)">Request your invitation &rarr;</a></div>
+      <div class="blk"><h4>Find us</h4><p style="color:var(--mist)">Believers Choice Ministries, Inc.<br>Fayetteville, Georgia</p></div>
+      <div class="blk"><div class="menu-verse">&ldquo;Behold, I am doing a new thing; now it springs forth, do you not perceive it?&rdquo;<br><span style="font-family:var(--font-body);font-style:normal;font-size:11px;letter-spacing:.3em;color:var(--gold)">ISAIAH 43:19</span></div></div>
+    </aside>
+  </div>
+</div>
+
+<main>
+
+<!-- ============ HOME ============ -->
+<section class="page" data-page="home">
+  <div class="hero">
+    <div class="rays"></div>
+    <div class="hero-img" data-parallax="0.06"><img src="img/couple.jpg" alt="Pastor Derek Griffin and First Lady Lisa Griffin" fetchpriority="high"></div>
+    <div class="wrap hero-in">
+      <div class="eyebrow rv">Believers Choice Ministries &middot; Fayetteville, Georgia</div>
+      <h1 class="rv d1 shine" data-shine><span class="ital">Behold, I am doing</span>a new thing.</h1>
+      <p class="sub rv d2">Founder and Senior Pastor <b>Derek Griffin</b> and First Lady <b>Lisa Griffin</b> invite you to the beginning of a ministry built on <b>people, purpose, and Kingdom impact</b>.</p>
+      <div class="row rv d3">
+        <a class="btn gold" href="#connect" data-magnet>Request an invitation <span class="arr"></span></a>
+        <a class="btn line" href="#story" data-magnet>Our story</a>
+      </div>
+      <div class="scripture-chip rv d3">&ldquo;Behold, I am doing a new thing; now it springs forth, do you not perceive it?&rdquo;<cite>Isaiah 43:19 &middot; ESV</cite></div>
+    </div>
+    <div class="count-label">Our inaugural service begins in</div>
+    <div class="count" data-countdown aria-live="off"><div><b data-d>--</b><span>Days</span></div><div><b data-h>--</b><span>Hours</span></div><div><b data-m>--</b><span>Min</span></div><div><b data-s>--</b><span>Sec</span></div></div>
+    <div class="scrollcue"></div>
+  </div>
+
+  <div class="marq" aria-hidden="true"><div class="marq-track" data-marquee></div></div>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="eyebrow rv">What we stand on</div>
+      <p class="statement" data-statement style="margin-top:34px">We are a people who choose. We choose truth over tradition. We choose <span class="g">faith</span> over fear. We choose <span class="g">obedience</span> over convenience. We choose Christ.</p>
+      <div class="chooser">
+        <div class="rv"><h3 class="shine" data-shine>Choose <span>Life.</span></h3><p>Walk in the abundant life God designed for you, from the inside out.</p></div>
+        <div class="rv d1"><h3 class="shine" data-shine>Choose <span>Christ.</span></h3><p>Make Jesus the center of your home, your work, and your decisions.</p></div>
+        <div class="rv d2"><h3 class="shine" data-shine>Choose <span>Kingdom.</span></h3><p>Advance God&rsquo;s Kingdom with authority in every sphere of life.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec navy">
+    <div class="wrap">
+      <div class="eyebrow rv">Who we are</div>
+      <h2 class="h2 rv d1" style="margin-top:22px;max-width:12em">People. Purpose. <span class="gold-text ital">Kingdom Impact.</span></h2>
+      <div class="pillars">
+        <article class="pillar rv" data-glow><span class="no">1</span>
+          <svg viewBox="0 0 48 48"><circle cx="17" cy="16" r="6"/><circle cx="33" cy="18" r="5"/><path d="M5 40c1-9 6-13 12-13s11 4 12 13M28 30c6-3 14 0 15 10"/></svg>
+          <h3>People</h3><p>A welcoming family where everyone is known, strengthened, and sent. Families, leaders, and the next generation, growing together.</p></article>
+        <article class="pillar rv d1" data-glow><span class="no">2</span>
+          <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><circle cx="24" cy="24" r="9"/><circle cx="24" cy="24" r="2"/><path d="M24 3v8M24 37v8M3 24h8M37 24h8"/></svg>
+          <h3>Purpose</h3><p>Every believer has a God-given assignment. We help you discover your identity in Christ and walk it out with clarity and confidence.</p></article>
+        <article class="pillar rv d2" data-glow><span class="no">3</span>
+          <svg viewBox="0 0 48 48"><path d="M20 4h8v12h12v8H28v20h-8V24H8v-8h12z"/></svg>
+          <h3>Kingdom Impact</h3><p>Faith that shows up in homes, classrooms, boardrooms, and neighborhoods, and leaves people better than we found them.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="eyebrow rv">Your shepherds</div>
+      <h2 class="h2 rv d1" style="margin-top:22px;max-width:11em">Led by two who <span class="ital gold-text">serve together.</span></h2>
+      <div class="duo">
+        <a href="#pastor" class="rv" data-hover>
+          <figure class="lit" data-lit style="--img:url(../img/pastor.jpg)"><img src="img/pastor.jpg" alt="Pastor Derek Griffin" loading="lazy"><figcaption><b>Pastor Derek Griffin</b>Founder and Senior Pastor</figcaption></figure>
+          <span class="more">Read his story <span class="arr" style="width:22px;height:1px;background:currentColor;display:inline-block"></span></span>
+        </a>
+        <a href="#first-lady" class="rv d2" data-hover>
+          <figure class="lit" data-lit style="--img:url(../img/lisa.jpg)"><img src="img/lisa.jpg" alt="First Lady Lisa Griffin" loading="lazy" style="object-position:center top"><figcaption><b>First Lady Lisa Griffin</b>First Lady</figcaption></figure>
+          <span class="more">Read her story <span class="arr" style="width:22px;height:1px;background:currentColor;display:inline-block"></span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec light">
+    <div class="wrap">
+      <div class="eyebrow rv">Kingdom living</div>
+      <h2 class="h2 rv d1" style="margin-top:22px;max-width:13em">Thrive in every part of life.</h2>
+      <p class="lead rv d2" style="margin-top:22px">Through practical, biblical teaching, we equip believers to grow spiritually and to thrive educationally, culturally, civically, and economically.</p>
+      <div class="dims">
+        <a href="#ministries" class="dim rv" data-hover><small>I</small><h3>Spiritually</h3><p>Disciple-making rooted in Scripture, prayer, and honest self-examination.</p></a>
+        <a href="#ministries" class="dim rv" data-hover><small>II</small><h3>Educationally</h3><p>Mentorship, learning, and scholarship partnerships that open doors for the next generation.</p></a>
+        <a href="#ministries" class="dim rv" data-hover><small>III</small><h3>Culturally</h3><p>Knowing who you are in Christ, and celebrating the heritage and gifts you carry.</p></a>
+        <a href="#ministries" class="dim rv" data-hover><small>IV</small><h3>Civically</h3><p>Faith in public life: community initiatives that expand opportunity and support lasting progress.</p></a>
+        <a href="#ministries" class="dim rv" data-hover><small>V</small><h3>Economically</h3><p>Stewardship, careers, and enterprise. Building wealth with wisdom and giving with purpose.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="eyebrow rv">The Word</div>
+      <h2 class="h2 rv d1" style="margin-top:22px;max-width:10em">Standing on <span class="ital gold-text">the promises.</span></h2>
+      <div class="verses" data-verses></div>
+    </div>
+  </section>
+
+  <section class="sec navy">
+    <div class="wrap">
+      <div class="eyebrow rv">Moments</div>
+      <h2 class="h2 rv d1" style="margin-top:22px;max-width:12em">A life of service, <span class="ital gold-text">already in motion.</span></h2>
+      <div class="gal">
+        <figure class="lit g1 rv" data-lit style="--img:url(../img/award1.jpg)"><img src="img/award1.jpg" alt="Pastor Derek Griffin receiving the ACMCC President's Impact Award" loading="lazy"><figcaption><b>President&rsquo;s Impact Award</b>ACMCC &middot; December 2025</figcaption></figure>
+        <figure class="lit g2 rv d1" data-lit style="--img:url(../img/cc2.jpg)"><img src="img/cc2.jpg" alt="Pastor Derek and First Lady Lisa Griffin at the Community Champion Awards" loading="lazy"><figcaption><b>Community Champion Awards</b>Christian City</figcaption></figure>
+        <figure class="lit g3 rv d2" data-lit style="--img:url(../img/gala.jpg)"><img src="img/gala.jpg" alt="Pastor Derek and First Lady Lisa Griffin at a gala" loading="lazy"><figcaption><b>Together</b>35 years married</figcaption></figure>
+        <figure class="lit g4 rv" data-lit style="--img:url(../img/family.jpg)"><img src="img/family.jpg" alt="The Griffin family" loading="lazy" style="object-position:center 30%"><figcaption><b>Family first</b></figcaption></figure>
+        <figure class="lit g5 rv d1" data-lit style="--img:url(../img/award2.jpg)"><img src="img/award2.jpg" alt="Pastor Derek Griffin with his award, flanked by First Lady Lisa Griffin and a friend" loading="lazy"><figcaption><b>Honored to serve</b></figcaption></figure>
+      </div>
+    </div>
+  </section>
+  <div data-cta></div>
+</section>
+
+<!-- ============ STORY ============ -->
+<section class="page" data-page="story">
+  <div class="phero"><div class="wrap">
+    <div class="eyebrow rv">Our story</div>
+    <h1 class="rv d1">A new thing, <span class="ital gold-text">springing forth.</span></h1>
+    <p class="lead rv d2">After more than 27 years of ministry, Pastor Derek and First Lady Lisa Griffin are planting Believers Choice Ministries in Fayetteville, Georgia: a church for people who choose Christ, and choose to grow.</p>
+  </div></div>
+
+  <section class="sec" style="padding-top:40px">
+    <div class="wrap">
+      <div class="cards two">
+        <article class="card rv" data-glow style="padding:44px"><small>Our mission</small><h3 style="font-size:clamp(28px,3vw,40px)">Equip. Empower. Advance.</h3><p style="font-size:19px;color:#e3e8f8">To equip and empower believers to boldly choose Christ, walk in uncompromising biblical truth, and advance God&rsquo;s Kingdom with authority in every sphere of life.</p></article>
+        <article class="card rv d1" data-glow style="padding:44px"><small>Our vision</small><h3 style="font-size:clamp(28px,3vw,40px)">A global community, transformed.</h3><p style="font-size:19px;color:#e3e8f8">To raise a global community of spiritually mature, Kingdom-minded believers who exercise godly choice, live victoriously, and transform families, communities, and nations.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec light">
+    <div class="wrap">
+      <div class="profile">
+        <div class="sticky"><figure class="lit rv" data-lit style="--img:url(../img/flyer.jpg);aspect-ratio:2/3"><img src="img/flyer.jpg" alt="Inaugural Sunday Service announcement" loading="lazy"></figure></div>
+        <div>
+          <div class="eyebrow rv">Why Believers Choice</div>
+          <h2 class="h2 rv d1" style="margin-top:20px;font-size:clamp(34px,4.6vw,64px)">The name is the message.</h2>
+          <p class="rv" style="margin-top:26px;font-size:19px">Every day, believers face a choice: fear or faith, convenience or obedience, tradition or truth. Faith is not drifting into belief. It is deciding, again and again, to follow Christ.</p>
+          <p class="rv">Believers Choice Ministries exists to help people make that decision with confidence, and then live it out: at home, at work, in the community, and in the world.</p>
+          <div class="pull rv" style="color:var(--pearl-ink)">Choose Life. Choose Christ. Choose Kingdom.</div>
+          <p class="rv">Our guiding commitment is simple: disciple, inspire, and empower the people of God for Kingdom living, with humility, compassion, and a deep love for God and His people.</p>
+          <div class="row rv" style="margin-top:30px"><a class="btn dark" href="#pastor" data-magnet>Meet Pastor Derek <span class="arr"></span></a><a class="btn dark" href="#first-lady" data-magnet style="background:transparent;color:var(--pearl-ink);border:1px solid var(--pearl-ink)">Meet First Lady Lisa</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="eyebrow rv">Our declaration</div>
+      <p class="statement" data-statement style="margin-top:30px">We are Believers Choice Ministries. We choose Christ. We choose truth over tradition. We choose <span class="g">faith</span> over fear. We choose <span class="g">obedience</span> over convenience.</p>
+      <div class="pull rv" style="margin-top:56px;max-width:760px">Be watchful, stand firm in the faith, be brave, be strong. Let all that you do be done with love.<cite>1 Corinthians 16:13&ndash;14</cite></div>
+    </div>
+  </section>
+  <div data-cta></div>
+</section>
+
+<!-- ============ PASTOR ============ -->
+<section class="page" data-page="pastor">
+  <div class="phero"><div class="wrap">
+    <div class="eyebrow rv">Founder and Senior Pastor</div>
+    <h1 class="rv d1">Pastor <span class="ital gold-text">Derek Griffin</span></h1>
+  </div></div>
+  <section class="sec" style="padding-top:30px">
+    <div class="wrap profile">
+      <div class="sticky"><figure class="lit rv" data-lit style="--img:url(../img/pastor.jpg)"><img src="img/pastor.jpg" alt="Pastor Derek Griffin"></figure></div>
+      <div>
+        <div class="pull rv" style="margin-top:0">&ldquo;I can do all things through Christ which strengtheneth me.&rdquo;<cite>Philippians 4:13</cite></div>
+        <p class="rv" style="font-size:20px;color:#fff">Pastor Derek Griffin is the Founder and Senior Pastor of Believers Choice Ministries, Inc. in Fayetteville, Georgia. His mission is to disciple, inspire, and empower the people of God for Kingdom living.</p>
+        <p class="rv">Through practical, biblical teaching, he equips believers to grow spiritually and thrive educationally, culturally, civically, and economically.</p>
+        <div class="facts rv"><div><b>27+</b><span>Years in ministry</span></div><div><b>35</b><span>Years married</span></div><div><b>3</b><span>Children</span></div></div>
+        <p class="rv">With more than 27 years of ministry service, Pastor Derek leads with humility, compassion, and a deep love for God and His people. He is passionate about strengthening families, developing leaders, and helping people discover their identity and purpose in Christ.</p>
+        <p class="rv">An accomplished business leader, he is an insurance agency owner, commercial and residential developer, and executive leader with a global commercial and residential development firm based in Marietta, Georgia. He brings his experience and relationships into community initiatives that expand opportunity and support lasting progress.</p>
+        <p class="rv">He also serves as Secretary-Treasurer of the Association of Christian Ministers of Clayton County (ACMCC), partnering with ministry and community leaders to advance education, service, and empowerment.</p>
+        <p class="rv">Pastor Derek and his wife of 35 years, First Lady Lisa Griffin, are the proud parents of Darien, Blake, and Kennedy. Together, they are building a welcoming ministry where people can grow in faith, experience meaningful fellowship, and live with Kingdom purpose.</p>
+        <div class="tags rv"><span>Pastor &amp; Teacher</span><span>Business Leader</span><span>Developer</span><span>Insurance Agency Owner</span><span>ACMCC Secretary-Treasurer</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec navy">
+    <div class="wrap">
+      <div class="eyebrow rv">Recognition</div>
+      <div class="event" style="margin-top:34px">
+        <figure class="lit rv" data-lit style="--img:url(../img/award1.jpg);aspect-ratio:3/4"><img src="img/award1.jpg" alt="Pastor Derek Griffin receiving the ACMCC President's Impact Award" loading="lazy"></figure>
+        <div><h2 class="h2 rv" style="font-size:clamp(34px,4.4vw,62px)">The ACMCC President&rsquo;s <span class="ital gold-text">Impact Award</span></h2>
+        <p class="lead rv" style="margin-top:22px">Presented in December 2025 for exceptional leadership, stewardship, and faithful service in advancing the mission and vision of the Association of Christian Ministers of Clayton County.</p></div>
+      </div>
+    </div>
+  </section>
+  <div data-cta></div>
+</section>
+
+<!-- ============ FIRST LADY ============ -->
+<section class="page" data-page="first-lady">
+  <div class="phero"><div class="wrap">
+    <div class="eyebrow rv">First Lady</div>
+    <h1 class="rv d1">First Lady <span class="ital gold-text">Lisa Griffin</span></h1>
+  </div></div>
+  <section class="sec" style="padding-top:30px">
+    <div class="wrap profile">
+      <div class="sticky"><figure class="lit rv" data-lit style="--img:url(../img/lisa.jpg)"><img src="img/lisa.jpg" alt="First Lady Lisa Griffin" style="object-position:center top"></figure></div>
+      <div>
+        <p class="rv" style="font-size:20px;color:#fff">First Lady Lisa Griffin serves alongside her husband, Founder and Senior Pastor Derek Griffin, at Believers Choice Ministries, Inc. in Fayetteville, Georgia. She brings a heart for service and a passion for equipping people to grow in faith, recognize their potential, and pursue their God-given purpose.</p>
+        <div class="facts rv"><div><b>20+</b><span>Years in HR</span></div><div><b>35</b><span>Years married</span></div><div><b>ATL</b><span>Atlanta native</span></div></div>
+        <p class="rv">An Atlanta native, Lisa is a licensed REALTOR&reg;, life and health insurance agent, and Human Resources professional with more than 20 years of experience helping major companies identify and attract top talent while empowering individuals to achieve their career goals.</p>
+        <p class="rv">Her interests include professional development, training, youth coaching, personal image, and presentation. Through mentorship, encouragement, and practical guidance, she helps others build the skills and confidence needed to thrive in today&rsquo;s competitive marketplace.</p>
+        <div class="pull rv">Success begins with preparation, professionalism, and purpose.</div>
+        <p class="rv">Raised by a father who served as an African Methodist Episcopal (AME) minister and a mother who was an educator, Lisa&rsquo;s foundation is rooted in faith, service, and education. She believes in leading by example and preparing the next generation for success. Her guiding conviction is that in everything we do, we should trust God to guide our steps.</p>
+        <p class="rv">Lisa and Pastor Derek have been married for 35 years and are the proud parents of Darien, Blake, and Kennedy. Together, they are building a welcoming ministry that strengthens families, nurtures meaningful relationships, and empowers people to live with faith and purpose.</p>
+        <div class="tags rv"><span>Licensed REALTOR&reg;</span><span>Life &amp; Health Insurance</span><span>Human Resources</span><span>Youth Coaching</span><span>Mentorship</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec light">
+    <div class="wrap">
+      <div class="eyebrow rv">Together</div>
+      <div class="event" style="margin-top:34px">
+        <figure class="lit rv" data-lit style="--img:url(../img/couple.jpg);aspect-ratio:5/6"><img src="img/couple.jpg" alt="Pastor Derek and First Lady Lisa Griffin" loading="lazy"></figure>
+        <div><h2 class="h2 rv" style="font-size:clamp(34px,4.4vw,62px)">Thirty-five years, <span class="ital" style="color:var(--gold-ink)">one calling.</span></h2>
+        <p class="lead rv" style="margin-top:22px">Pastor Derek and First Lady Lisa have built their marriage, their family, and their work on faith, and now they are building a church home for yours.</p>
+        <div class="row rv" style="margin-top:30px"><a class="btn dark" href="#pastor" data-magnet>Meet Pastor Derek <span class="arr"></span></a></div></div>
+      </div>
+    </div>
+  </section>
+  <div data-cta></div>
+</section>
+
+<!-- ============ MINISTRIES ============ -->
+<section class="page" data-page="ministries">
+  <div class="phero"><div class="wrap">
+    <div class="eyebrow rv">Ministries</div>
+    <h1 class="rv d1">Kingdom living, <span class="ital gold-text">every day.</span></h1>
+    <p class="lead rv d2">Our teaching is practical and biblical. Our goal is a whole life: growing in faith and thriving in the places God has placed you.</p>
+  </div></div>
+  <section class="sec" style="padding-top:30px">
+    <div class="wrap">
+      <div class="eyebrow rv">Five spheres</div>
+      <div class="cards three" style="margin-top:34px">
+        <article class="card rv" data-glow><small>Spiritual</small><h3>Grow in Christ</h3><p>Practical, biblical teaching and disciple-making that moves you from hearing to doing. Built on prayer, the Word, and honest self-examination.</p></article>
+        <article class="card rv d1" data-glow><small>Educational</small><h3>Learn and Lead</h3><p>Mentorship and learning for every age, and partnership with the Association of Christian Ministers of Clayton County to advance scholarships and education.</p></article>
+        <article class="card rv d2" data-glow><small>Cultural</small><h3>Know Who You Are</h3><p>Discover your identity and purpose in Christ, and honor the heritage, creativity, and gifts God placed in you.</p></article>
+        <article class="card rv" data-glow><small>Civic</small><h3>Serve the City</h3><p>Community initiatives that expand opportunity and support lasting progress, because faith belongs in public life.</p></article>
+        <article class="card rv d1" data-glow><small>Economic</small><h3>Build with Wisdom</h3><p>Stewardship, career development, professional presence, and enterprise, from the marketplace to the boardroom.</p></article>
+        <article class="card rv d2" data-glow style="background:linear-gradient(160deg,rgba(217,172,69,.22),rgba(4,8,23,.4));border-color:var(--gold)"><small>Start here</small><h3>New Here?</h3><p>Request an invitation to our inaugural service and meet the family.</p><div style="margin-top:18px"><a class="more" href="#connect" data-hover>Request invitation &rarr;</a></div></article>
+      </div>
+    </div>
+  </section>
+  <section class="sec navy">
+    <div class="wrap">
+      <div class="eyebrow rv">At the heart of the house</div>
+      <h2 class="h2 rv d1" style="margin-top:22px;max-width:12em">Families, leaders, and <span class="ital gold-text">intercession.</span></h2>
+      <div class="cards three">
+        <article class="card rv" data-glow><small>Families</small><h3>Stronger Homes</h3><p>Pastor Derek and First Lady Lisa are in their 35th year of marriage. They are passionate about strengthening families and nurturing meaningful relationships.</p></article>
+        <article class="card rv d1" data-glow><small>Leaders &amp; Youth</small><h3>Next Generation</h3><p>Developing leaders and preparing the next generation through mentorship, youth coaching, and practical guidance for confident living.</p></article>
+        <article class="card rv d2" data-glow><small>Prayer</small><h3>Intercession First</h3><p>Before we correct, we pray. Intercession aligns our hearts with God&rsquo;s heart, replacing judgment with compassion.</p></article>
+      </div>
+      <div class="row rv" style="margin-top:50px"><a class="btn gold" href="#discipleship" data-magnet>Explore discipleship <span class="arr"></span></a></div>
+    </div>
+  </section>
+  <div data-cta></div>
+</section>
+
+<!-- ============ DISCIPLESHIP ============ -->
+<section class="page" data-page="discipleship">
+  <div class="phero"><div class="wrap">
+    <div class="eyebrow rv">Discipleship &amp; new members</div>
+    <h1 class="rv d1">Remove the plank. <span class="ital gold-text">Then lead.</span></h1>
+    <p class="lead rv d2">&ldquo;First take the plank out of your own eye&hellip;&rdquo; Matthew 7:5 (NIV). At Believers Choice, discipleship begins with a look in the mirror.</p>
+  </div></div>
+  <section class="sec" style="padding-top:30px">
+    <div class="wrap">
+      <div class="eyebrow rv">Why self-examination comes first</div>
+      <div class="cards" style="margin-top:34px">
+        <article class="card rv" data-glow><small>Credibility</small><h3>Authority is authenticity</h3><p>People follow those whose lives reflect the truth they preach.</p><p style="margin-top:12px;color:var(--gold)">1 Timothy 4:12</p></article>
+        <article class="card rv d1" data-glow><small>Clarity</small><h3>See clearly</h3><p>Blind spots distort how we see others. Examining ourselves replaces judgment with compassion.</p><p style="margin-top:12px;color:var(--gold)">Galatians 6:1</p></article>
+        <article class="card rv d2" data-glow><small>Compassion</small><h3>Grace received, grace given</h3><p>Having faced our own need for grace, we extend it rather than condemnation.</p><p style="margin-top:12px;color:var(--gold)">Romans 2:1</p></article>
+        <article class="card rv d3" data-glow><small>Continuity</small><h3>A lifestyle</h3><p>Self-examination is not a one-time event. It keeps the disciple-maker spiritually sharp.</p><p style="margin-top:12px;color:var(--gold)">2 Corinthians 13:5</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="sec light">
+    <div class="wrap">
+      <div class="eyebrow rv">Four pillars</div>
+      <h2 class="h2 rv d1" style="margin-top:22px;max-width:12em">How Kingdom disciple-makers live.</h2>
+      <div class="dims">
+        <div class="dim rv"><small>I</small><h3>Integrity of Life</h3><p>Your life is your message. Accountability, mentorship, and transparency keep what we preach and how we live the same thing. <b>1 Tim 4:12</b></p></div>
+        <div class="dim rv"><small>II</small><h3>Intercession Before Instruction</h3><p>Before correcting another, pray. Intercession replaces judgment with compassion and agenda with love. <b>Luke 22:32</b></p></div>
+        <div class="dim rv"><small>III</small><h3>Imitation of Christ</h3><p>The goal is not behavior modification. It is Christ-likeness. Point every disciple to Jesus. <b>1 Cor 11:1</b></p></div>
+        <div class="dim rv"><small>IV</small><h3>Investment Over Transaction</h3><p>True discipleship is relational. It takes time, patience, and the willingness to walk with someone through their process. <b>2 Tim 2:2</b></p></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="wrap">
+      <div class="eyebrow rv">The mirror</div>
+      <h2 class="h2 rv d1" style="margin-top:22px;max-width:12em">Two ways to lead.</h2>
+      <div class="vs rv">
+        <div class="no"><h4>Without self-examination</h4><ul><li>Leads from unhealed wounds</li><li>Corrects with pride, not grace</li><li>Produces disciples in their own image</li><li>Creates dependency, not maturity</li><li>Ministry becomes performance</li></ul></div>
+        <div class="yes"><h4>With self-examination</h4><ul><li>Leads from strength and humility</li><li>Corrects with gentleness and compassion</li><li>Points disciples to Christ alone</li><li>Produces mature, independent believers</li><li>Ministry reflects authentic Kingdom life</li></ul></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec light">
+    <div class="wrap">
+      <div class="eyebrow rv">Practical application</div>
+      <h2 class="h2 rv d1" style="margin-top:22px;max-width:12em">Seven steps to becoming a Kingdom discipler.</h2>
+      <div class="steps">
+        <div class="step rv"><p>Commit to personal daily devotion and Scripture meditation.</p></div>
+        <div class="step rv"><p>Establish an accountability relationship with a spiritual mentor.</p></div>
+        <div class="step rv"><p>Conduct a regular personal inventory using 2 Corinthians 13:5.</p></div>
+        <div class="step rv"><p>Pray specifically for those you are called to disciple before engaging.</p></div>
+        <div class="step rv"><p>Lead with questions and listening, not answers and directives.</p></div>
+        <div class="step rv"><p>Model the transformation you are calling others to pursue.</p></div>
+        <div class="step rv"><p>Celebrate growth in others while remaining teachable yourself.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="wrap">
+      <div class="eyebrow rv">Reflect</div>
+      <h2 class="h2 rv d1" style="margin-top:22px">Five questions for every leader.</h2>
+      <div class="cards three">
+        <article class="card rv" data-glow><small>Q1</small><p style="font-size:18px;color:#fff;margin-top:12px">Where in your own life is God calling you to deeper transformation?</p></article>
+        <article class="card rv d1" data-glow><small>Q2</small><p style="font-size:18px;color:#fff;margin-top:12px">Is there a pattern, mindset, or wound affecting how you engage those you lead?</p></article>
+        <article class="card rv d2" data-glow><small>Q3</small><p style="font-size:18px;color:#fff;margin-top:12px">What spiritual disciplines are you actively practicing to maintain clarity and health?</p></article>
+        <article class="card rv" data-glow><small>Q4</small><p style="font-size:18px;color:#fff;margin-top:12px">Who is holding you accountable in your own spiritual growth?</p></article>
+        <article class="card rv d1" data-glow><small>Q5</small><p style="font-size:18px;color:#fff;margin-top:12px">How can this ministry build a culture where leaders model vulnerability and self-examination?</p></article>
+      </div>
+    </div>
+  </section>
+  <div data-cta></div>
+</section>
+
+<!-- ============ WATCH ============ -->
+<section class="page" data-page="watch">
+  <div class="phero"><div class="wrap">
+    <div class="eyebrow rv">Watch</div>
+    <h1 class="rv d1">Worship from <span class="ital gold-text">anywhere.</span></h1>
+    <p class="lead rv d2">Our inaugural Sunday service is online via Zoom, by invitation. Request yours and we will send the details.</p>
+  </div></div>
+  <section class="sec" style="padding-top:30px">
+    <div class="wrap">
+      <div class="event">
+        <figure class="lit rv" data-lit style="--img:url(../img/flyer.jpg)"><img src="img/flyer.jpg" alt="Inaugural Sunday Service flyer" loading="lazy"></figure>
+        <div>
+          <div class="eyebrow rv">Inaugural service</div>
+          <h2 class="h2 rv d1" style="margin-top:20px;font-size:clamp(36px,5vw,70px)">Sunday, <span class="gold-text ital">November 1</span></h2>
+          <div class="when rv"><div><small>Date</small><b>Nov 1, 2026</b></div><div><small>Time</small><b>11:00 AM ET</b></div><div><small>Where</small><b>Zoom<br><span style="font-size:15px;color:var(--mist);font-family:var(--font-body)">Invitation only</span></b></div></div>
+          <p class="lead rv">We look forward to serving everyone in the Spirit and Love of Jesus Christ.</p>
+          <div class="row rv" style="margin-top:30px"><a class="btn gold" href="#connect" data-magnet>Request an invitation <span class="arr"></span></a></div>
+        </div>
+      </div>
+      <div class="how">
+        <article class="card rv" data-glow><small>Step 1</small><h3>Request</h3><p>Tell us who you are on the Connect page.</p></article>
+        <article class="card rv d1" data-glow><small>Step 2</small><h3>Receive</h3><p>Our team sends you the Zoom invitation.</p></article>
+        <article class="card rv d2" data-glow><small>Step 3</small><h3>Join</h3><p>Log in a few minutes early and worship with us.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="sec navy">
+    <div class="wrap">
+      <div class="eyebrow rv">Message library</div>
+      <div class="empty rv" style="margin-top:34px"><h3>Messages begin November 1.</h3><p>After our inaugural service, sermons and teaching from Pastor Derek will be posted here.</p></div>
+    </div>
+  </section>
+  <div data-cta></div>
+</section>
+
+<!-- ============ EVENTS ============ -->
+<section class="page" data-page="events">
+  <div class="phero"><div class="wrap">
+    <div class="eyebrow rv">Events</div>
+    <h1 class="rv d1">Come and <span class="ital gold-text">see.</span></h1>
+  </div></div>
+  <section class="sec" style="padding-top:30px">
+    <div class="wrap">
+      <div class="event">
+        <figure class="lit rv" data-lit style="--img:url(../img/flyer.jpg)"><img src="img/flyer.jpg" alt="Inaugural Sunday Service flyer" loading="lazy"></figure>
+        <div>
+          <div class="eyebrow rv">Featured</div>
+          <h2 class="h2 rv d1" style="margin-top:20px;font-size:clamp(36px,5vw,70px)">Our Inaugural <span class="gold-text ital">Sunday Service</span></h2>
+          <div class="when rv"><div><small>Date</small><b>Sun, Nov 1, 2026</b></div><div><small>Time</small><b>11:00 AM ET</b></div><div><small>Where</small><b>Online via Zoom</b></div></div>
+          <p class="lead rv">Founder and Senior Pastor Derek Griffin and First Lady Lisa Griffin are proud to announce the first Sunday service of Believers Choice Ministries. Invitation only.</p>
+          <div class="pull rv" style="font-size:22px">Behold, I am doing a new thing; now it springs forth, do you not perceive it?<cite>Isaiah 43:19 &middot; ESV</cite></div>
+          <div class="row rv"><a class="btn gold" href="#connect" data-magnet>Request an invitation <span class="arr"></span></a><a class="btn line" data-magnet target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Believers+Choice+Ministries+Inaugural+Sunday+Service&dates=20261101T160000Z/20261101T173000Z&details=Online+via+Zoom.+Invitation+only.&location=Zoom">Add to calendar</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec navy">
+    <div class="wrap">
+      <div class="eyebrow rv">What&rsquo;s next</div>
+      <div class="empty rv" style="margin-top:34px"><h3>More dates are coming.</h3><p>Check back after our inaugural service for upcoming gatherings, classes, and community events.</p></div>
+    </div>
+  </section>
+  <div data-cta></div>
+</section>
+
+<!-- ============ COMMUNITY ============ -->
+<section class="page" data-page="community">
+  <div class="phero"><div class="wrap">
+    <div class="eyebrow rv">Community</div>
+    <h1 class="rv d1">Faith that <span class="ital gold-text">shows up.</span></h1>
+    <p class="lead rv d2">Pastor Derek and First Lady Lisa have long poured into their community through education, service, and partnership. That work travels with them.</p>
+  </div></div>
+  <section class="sec light" style="padding-top:clamp(50px,7vw,90px)">
+    <div class="wrap">
+      <div class="partner rv">
+        <img src="img/acmcc.jpg" alt="The Association of Christian Ministers of Clayton County logo">
+        <div><div class="eyebrow">Partner</div><h2 class="h2" style="font-size:clamp(30px,3.6vw,50px);margin:14px 0 14px">Association of Christian Ministers of Clayton County</h2>
+        <p>Pastor Derek serves as Secretary-Treasurer of the ACMCC, partnering with ministry and community leaders to advance <b>scholarships, education, and empowerment</b>. In December 2025 he received the ACMCC President&rsquo;s Impact Award.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="wrap">
+      <div class="eyebrow rv">In the community</div>
+      <h2 class="h2 rv d1" style="margin-top:22px;max-width:12em">Showing up where <span class="ital gold-text">it counts.</span></h2>
+      <div class="duo" style="grid-template-columns:3fr 2fr;align-items:start">
+        <figure class="lit rv" data-lit style="--img:url(../img/cc2.jpg);aspect-ratio:4/3"><img src="img/cc2.jpg" alt="Community Champion Awards" loading="lazy"><figcaption><b>Community Champion Awards</b>Christian City</figcaption></figure>
+        <figure class="lit rv d1" data-lit style="--img:url(../img/award2.jpg);aspect-ratio:3/4"><img src="img/award2.jpg" alt="ACMCC President's Impact Award" loading="lazy"><figcaption><b>President&rsquo;s Impact Award</b>ACMCC</figcaption></figure>
+      </div>
+      <div class="cards three" style="margin-top:60px">
+        <article class="card rv" data-glow><small>Education</small><h3>Scholarships</h3><p>Helping the next generation step into college and career with support and encouragement.</p></article>
+        <article class="card rv d1" data-glow><small>Service</small><h3>Neighbors helping neighbors</h3><p>Meeting real needs alongside local ministry and civic partners.</p></article>
+        <article class="card rv d2" data-glow><small>Empowerment</small><h3>Opportunity</h3><p>Using business experience and relationships to expand opportunity and support lasting progress.</p></article>
+      </div>
+    </div>
+  </section>
+  <div data-cta></div>
+</section>
+
+<!-- ============ GIVE ============ -->
+<section class="page" data-page="give">
+  <div class="phero"><div class="wrap">
+    <div class="eyebrow rv">Give</div>
+    <h1 class="rv d1">Sow into <span class="ital gold-text">the new thing.</span></h1>
+  </div></div>
+  <section class="sec" style="padding-top:30px">
+    <div class="wrap">
+      <div class="pull rv" style="font-size:clamp(26px,3.6vw,48px);max-width:900px">Every man according as he purposeth in his heart, so let him give; not grudgingly, or of necessity: for God loveth a cheerful giver.<cite>2 Corinthians 9:7 &middot; KJV</cite></div>
+      <p class="lead rv" style="margin-top:36px">Your generosity helps Believers Choice Ministries disciple, inspire, and empower people for Kingdom living, and serve our community from day one.</p>
+      <div class="empty rv" style="margin-top:50px;max-width:760px"><h3>Online giving opens soon.</h3><p>Giving details will be shared with our launch family. Request an invitation and we will make sure you are among the first to know.</p><div class="row" style="justify-content:center;margin-top:24px"><a class="btn gold" href="#connect" data-magnet>Stay in the loop <span class="arr"></span></a></div></div>
+    </div>
+  </section>
+  <div data-cta></div>
+</section>
+
+<!-- ============ CONNECT ============ -->
+<section class="page" data-page="connect">
+  <div class="phero"><div class="wrap">
+    <div class="eyebrow rv">Connect</div>
+    <h1 class="rv d1">You&rsquo;re <span class="ital gold-text">invited.</span></h1>
+    <p class="lead rv d2">Request your invitation to our inaugural service, ask for prayer, or tell us how you would like to serve.</p>
+  </div></div>
+  <section class="sec" style="padding-top:30px">
+    <div class="wrap" style="display:grid;grid-template-columns:7fr 4fr;gap:clamp(30px,6vw,90px)" id="connectGrid">
+      <div>
+        <form class="form rv" id="inviteForm" novalidate>
+          <div class="two"><div class="field"><label for="fn">First name</label><input id="fn" name="fn" autocomplete="given-name" required></div><div class="field"><label for="ln">Last name</label><input id="ln" name="ln" autocomplete="family-name"></div></div>
+          <div class="two"><div class="field"><label for="em">Email</label><input id="em" name="em" type="email" autocomplete="email" required></div><div class="field"><label for="ph">Phone (optional)</label><input id="ph" name="ph" type="tel" autocomplete="tel"></div></div>
+          <div class="field"><label for="re">I would like to</label><select id="re" name="re"><option>Receive an invitation to the inaugural service</option><option>Submit a prayer request</option><option>Learn about ministries</option><option>Volunteer or serve</option><option>Ask a general question</option></select></div>
+          <div class="field"><label for="ms">Message (optional)</label><textarea id="ms" name="ms"></textarea></div>
+          <div><button type="submit" class="btn gold" data-magnet>Send request <span class="arr"></span></button><p class="note" id="formErr" role="alert" style="color:#ffb0b0"></p></div>
+        </form>
+        <div class="thanks" id="thanks" hidden><h3 class="gold-text">Thank you.</h3><p id="thanksMsg">We are grateful you reached out.</p></div>
+      </div>
+      <aside class="rv">
+        <div class="card" style="padding:34px"><small>Where</small><h3 style="font-size:28px">Fayetteville, Georgia</h3><p>Believers Choice Ministries, Inc.</p>
+          <hr style="border:0;border-top:1px solid var(--line);margin:24px 0">
+          <small>Inaugural service</small><h3 style="font-size:28px">Nov 1 &middot; 11 AM ET</h3><p>Online via Zoom. Invitation only.</p></div>
+      </aside>
+    </div>
+  </section>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><img class="lg" src="img/logo-full.png" alt="Believers Choice Ministries: People, Purpose, Kingdom Impact" style="filter:drop-shadow(0 0 20px rgba(217,172,69,.25))"><p>A ministry for people who choose Christ, and choose to grow. Fayetteville, Georgia.</p></div>
+      <div><h4>About</h4><a href="#story">Our Story</a><a href="#pastor">Pastor Derek Griffin</a><a href="#first-lady">First Lady Lisa Griffin</a><a href="#community">Community</a></div>
+      <div><h4>Grow</h4><a href="#ministries">Ministries</a><a href="#discipleship">Discipleship</a><a href="#watch">Watch</a><a href="#events">Events</a></div>
+      <div><h4>Join</h4><a href="#connect">Request an invitation</a><a href="#give">Give</a><a href="#connect">Prayer request</a></div>
+    </div>
+    <div class="legal"><span>&copy; 2026 Believers Choice Ministries, Inc. All rights reserved.</span><span>People &nbsp;|&nbsp; Purpose &nbsp;|&nbsp; Kingdom Impact</span></div>
+  </div>
+</footer>
+
+<script src="js/app.js" charset="utf-8"></script>

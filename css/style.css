@@ -321,3 +321,23 @@ p{margin:0}
   .rv{transition:none}
 }
 @media (max-width:1000px){.hide-sm{display:none}}
+[hidden]{display:none!important}
+
+/* Connect page layout */
+.connect-grid{display:grid;grid-template-columns:7fr 4fr;gap:clamp(30px,6vw,90px)}
+.connect-grid>*{min-width:0}
+.how-2{grid-template-columns:1fr 1fr}
+.mailbig{font-size:clamp(26px,3.4vw,46px);overflow-wrap:anywhere}
+@media (max-width:1000px){.connect-grid{grid-template-columns:1fr}}
+@media (max-width:640px){
+  .how-2{grid-template-columns:1fr}
+  .mailbig{font-size:clamp(17px,5.1vw,24px);overflow-wrap:normal;word-break:normal;white-space:nowrap}
+  /* hero: photo on top with faces clear, text below */
+  .hero-img{left:0;right:0;top:0;bottom:auto;width:100%;height:auto;aspect-ratio:1145/1374;opacity:.95;
+    -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 12%,#000 58%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0,#000 12%,#000 58%,transparent 100%);-webkit-mask-composite:source-over;mask-composite:add}
+  .hero-img img{object-position:center 10%}
+  .hero-in{padding-top:calc(100vw + 8px)}
+  .hero{min-height:0}
+}
+.mail-aside{font-size:22px;overflow-wrap:normal}
+@media (max-width:640px){.mail-aside{font-size:clamp(14px,4.4vw,19px)}.connect-grid aside .card{padding:26px!important}}

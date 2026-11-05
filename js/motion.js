@@ -19,10 +19,10 @@
   function presets() {
     var n = narrow();
     return {
-      calm:   { ax: n ? 0.55 : 0.8, ay: 0.02, cs: n ? 0.5 : 0.62, cz: 0, cop: n ? 0.3 : 0.55, ry: 0, rays: 0.2, flare: 0.22, ring: 0.8, bloom: 0.8, motes: 0.75, moteSpeed: 1, flash: 0, light: 1 },
-      glow:   { ax: n ? 0.5 : 0.72, ay: 0, cs: n ? 0.55 : 0.8, cz: 0, cop: n ? 0.28 : 0.5, rays: 0.3, flare: 0.4, ring: 1, bloom: 1, motes: 1, moteSpeed: 1.4, flash: 0, light: 1 },
-      finale: { ax: 0, ay: 0.05, cs: n ? 0.85 : 1.0, cz: 0, cop: 0.5, rays: 0.5, flare: 0.25, ring: 1, bloom: 1.15, motes: 1.2, moteSpeed: 1.8, flash: 0, light: 1 },
-      sub:    { ax: n ? 0.55 : 0.82, ay: 0.0, cs: n ? 0.45 : 0.56, cz: 0, cop: n ? 0.14 : 0.26, rays: 0.1, flare: 0.2, ring: 0.7, bloom: 0.75, motes: 0.7, moteSpeed: 1, flash: 0, light: 1 }
+      calm:   { ax: n ? 0.55 : 0.8, ay: 0.02, cs: n ? 0.5 : 0.62, cz: 0, cop: n ? 0.3 : 0.55, ry: 0, rays: 0.2, flare: 0.22, ring: 0.8, bloom: 0.8, motes: 0.4, moteSpeed: 1, flash: 0, light: 1 },
+      glow:   { ax: n ? 0.5 : 0.72, ay: 0, cs: n ? 0.55 : 0.8, cz: 0, cop: n ? 0.28 : 0.5, rays: 0.3, flare: 0.4, ring: 1, bloom: 1, motes: 0.5, moteSpeed: 1.4, flash: 0, light: 1 },
+      finale: { ax: 0, ay: 0.05, cs: n ? 0.85 : 1.0, cz: 0, cop: 0.5, rays: 0.5, flare: 0.25, ring: 1, bloom: 1.15, motes: 0.6, moteSpeed: 1.8, flash: 0, light: 1 },
+      sub:    { ax: n ? 0.55 : 0.82, ay: 0.0, cs: n ? 0.45 : 0.56, cz: 0, cop: n ? 0.14 : 0.26, rays: 0.1, flare: 0.2, ring: 0.7, bloom: 0.75, motes: 0.35, moteSpeed: 1, flash: 0, light: 1 }
     };
   }
   function setScene(name, dur) {

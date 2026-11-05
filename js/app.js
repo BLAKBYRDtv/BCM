@@ -41,7 +41,7 @@
     }).join('');
   }
   $$('[data-cta]').forEach(function (el) {
-    el.outerHTML = '<section class="sec cta"><div class="wrap"><div class="eyebrow rv">Sunday, November 1, 2026 &middot; 11:00 AM ET</div><h2 class="rv d1">Be there when <span class="ital gold-text">it begins.</span></h2><div class="row rv d2"><a class="btn gold" href="#connect" data-magnet>Request an invitation <span class="arr"></span></a><a class="btn line" href="#events" data-magnet>See event details</a></div></div></section>';
+    el.outerHTML = '<section class="sec cta"><div class="wrap"><div class="eyebrow rv">Online via Zoom &middot; All are welcome</div><h2 class="rv d1">Come, worship <span class="ital gold-text">with us.</span></h2><div class="row rv d2"><a class="btn gold" href="#connect" data-magnet>Join us <span class="arr"></span></a><a class="btn line" href="#events" data-magnet>Service details</a></div></div></section>';
   });
 
   /* statement word splitter */
@@ -115,7 +115,7 @@
   function tick() {
     var left = TARGET - Date.now();
     $$('[data-countdown]').forEach(function (c) {
-      if (left <= 0) { c.innerHTML = '<div style="padding:18px 28px"><b style="font-size:26px">We are live</b><span>Welcome home</span></div>'; return; }
+      if (left <= 0) { c.innerHTML = '<div style="padding:18px 28px"><b style="font-size:26px">Online via Zoom</b><span>Join us</span></div>'; return; }
       var s = Math.floor(left / 1000);
       var d = Math.floor(s / 86400), h = Math.floor(s % 86400 / 3600), m = Math.floor(s % 3600 / 60), sec = s % 60;
       c.querySelector('[data-d]').textContent = d;
@@ -257,7 +257,7 @@
     if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) { err.textContent = 'Please enter a valid email address.'; $('#em').focus(); return; }
     err.textContent = '';
     form.hidden = true;
-    $('#thanksMsg').innerHTML = 'Thank you, ' + fn.replace(/[<>&]/g, '') + '. Your request is noted for our inaugural service on Sunday, November 1 at 11:00 AM ET.<br><span class="note">Preview note: this form is not yet connected to an inbox. Delivery is set up when the site goes live.</span>';
+    $('#thanksMsg').innerHTML = 'Thank you, ' + fn.replace(/[<>&]/g, '') + '. Your request is noted. We will send you the Zoom link.<br><span class="note">Preview note: this form is not yet connected to an inbox. Delivery is set up when the site goes live.</span>';
     $('#thanks').hidden = false;
     burst(innerWidth / 2, innerHeight / 2);
   });

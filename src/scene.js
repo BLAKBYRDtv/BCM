@@ -136,7 +136,7 @@ function init() {
   rays.position.z = -3.5; scene.add(rays);
 
   /* ---------- motes ---------- */
-  const N = coarse ? 520 : (lowCores ? 900 : 1500);
+  const N = coarse ? 260 : (lowCores ? 450 : 780);
   const pos = new Float32Array(N * 3), seed = new Float32Array(N * 4);
   for (let i = 0; i < N; i++) {
     pos[i * 3] = (Math.random() - 0.5) * 26; pos[i * 3 + 1] = (Math.random() - 0.5) * 14; pos[i * 3 + 2] = -5 + Math.random() * 9;
@@ -158,7 +158,7 @@ function init() {
       ' p.xy+=normalize(d+1e-4)*f*1.1;',
       ' vec4 mv=modelViewMatrix*vec4(p,1.0); gl_Position=projectionMatrix*mv;',
       ' float tw=0.55+0.45*sin(uTime*(0.8+aSeed.w*2.5)+aSeed.z*20.0);',
-      ' gl_PointSize=uPx*(0.5+aSeed.w*aSeed.w*2.2)*(7.0/-mv.z)*(1.0+f*0.8);',
+      ' gl_PointSize=uPx*(0.45+aSeed.w*aSeed.w*1.7)*(7.0/-mv.z)*(1.0+f*0.8);',
       ' vA=tw*(0.3+aSeed.x*0.7)*(0.7+f*1.1);',
       '}'
     ].join('\n'),

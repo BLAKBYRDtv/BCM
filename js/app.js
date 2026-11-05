@@ -26,6 +26,8 @@
     ['For I know the thoughts that I think toward you, saith the LORD.', 'Jeremiah 29:11']
   ];
   var PAGES = ['home', 'story', 'pastor', 'first-lady', 'ministries', 'discipleship', 'watch', 'events', 'community', 'give', 'connect'];
+  /* Paste the church's online giving link between the quotes to switch the Give button on. */
+  var GIVE_URL = '';
   var TARGET = Date.UTC(2026, 10, 1, 16, 0, 0); /* Nov 1, 2026 11:00 AM EST (UTC-5) */
 
   /* ---------- build content ---------- */
@@ -109,6 +111,13 @@
   $('#menuClose').addEventListener('click', closeMenu);
   addEventListener('keydown', function (e) { if (e.key === 'Escape') closeMenu(); });
   $$('#menu a').forEach(function (a) { a.addEventListener('click', function () { setTimeout(closeMenu, 10); }); });
+
+  $$('[data-give]').forEach(function (b) {
+    if (!GIVE_URL) return;
+    b.href = GIVE_URL; b.target = '_blank'; b.rel = 'noopener';
+    b.innerHTML = 'Give now <span class="arr"></span>';
+    var n = $('[data-give-note]'); if (n) n.textContent = 'You will be taken to our secure giving page.';
+  });
 
   /* ---------- countdown ---------- */
   function pad(n) { return n < 10 ? '0' + n : '' + n; }

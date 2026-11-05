@@ -17,6 +17,7 @@ const state = {
   cs: 1.0,                /* cross height as a fraction of ~46% of viewport height */
   cz: 0,                  /* push toward / away from camera */
   cop: 1.0,               /* cross opacity */
+  sway: 1, tilt: 1,       /* idle sway / pointer tilt amounts (0 = dead centre) */
   ry: 0, rx: 0,           /* extra rotation (radians) */
   spin: 0.14,             /* idle rotation speed */
   rays: 1.0, flare: 0.55, ring: 1.0,
@@ -249,8 +250,8 @@ function init() {
 
     applyState(dt);
     const idle = reduce ? 0 : t * state.spin;
-    crossRig.rotation.y = state.ry + Math.sin(idle * 1.3) * 0.55 + tiltY + vel * 0.0012;
-    crossRig.rotation.x = state.rx + Math.sin(idle * 0.9) * 0.08 + tiltX;
+    crossRig.rotation.y = state.ry + (Math.sin(idle * 1.3) * 0.55 + vel * 0.0012) * state.sway + tiltY * state.tilt;
+    crossRig.rotation.x = state.rx + Math.sin(idle * 0.9) * 0.08 * state.sway + tiltX * state.tilt;
     ring.rotation.z = -0.6 + t * 0.05; ring2.rotation.z = 2.4 - t * 0.035;
 
     /* pointer in world space (z = 0 plane) drives repel + light */

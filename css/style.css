@@ -341,3 +341,56 @@ p{margin:0}
 }
 .mail-aside{font-size:22px;overflow-wrap:normal}
 @media (max-width:640px){.mail-aside{font-size:clamp(14px,4.4vw,19px)}.connect-grid aside .card{padding:26px!important}}
+
+/* ===== 3D layer ===== */
+#gl{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:0;transition:opacity 1.8s ease}
+.gl-on #gl{opacity:1}
+main,footer.foot{position:relative;z-index:1}
+.has-gl .hero{background:none}
+.has-gl .rays{display:none}
+
+/* ===== motion layer ===== */
+html.lenis,html.lenis body{height:auto}
+html.lenis{scroll-behavior:auto!important}
+.lenis.lenis-stopped{overflow:hidden}
+#prog{position:fixed;left:0;top:0;height:2px;width:100%;transform:scaleX(0);transform-origin:0 50%;background:linear-gradient(90deg,var(--gold),var(--gold-hi));z-index:90;pointer-events:none}
+#wipe{position:fixed;inset:0;z-index:95;pointer-events:none;transform:translateY(-101%);background:linear-gradient(180deg,#050b1f,#0b2559 70%,#123f8f);border-bottom:2px solid var(--gold)}
+.intro{display:none}
+.has-gl.motion .intro{display:flex;position:relative;height:100vh;height:100svh;align-items:center;justify-content:center;text-align:center;z-index:2}
+.i-eye{position:absolute;top:calc(76px + 6vh);left:0;right:0;font-size:12px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);font-weight:600;margin:0}
+.i-h{position:absolute;bottom:13vh;left:0;right:0;margin:0;font-family:var(--font-display);font-style:italic;font-weight:400;font-size:clamp(64px,13vw,200px);line-height:1;color:#fff;text-shadow:0 0 60px rgba(217,172,69,.45)}
+.i-cue{position:absolute;bottom:3.5vh;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;font-size:10px;letter-spacing:.4em;text-transform:uppercase;color:var(--mist)}
+.i-cue i{width:1px;height:38px;background:linear-gradient(var(--gold),transparent);animation:cue 2s ease-in-out infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.has-gl .sec.navy{background:linear-gradient(180deg,rgba(10,23,64,.62),rgba(7,16,48,.72))}
+.has-gl .phero{background:radial-gradient(1000px 520px at 85% 0,rgba(33,71,184,.3),transparent 65%)}
+.has-gl .cta{background:radial-gradient(900px 500px at 50% 100%,rgba(33,71,184,.4),transparent 70%)}
+.hero-in .eyebrow,.hero .count-label{text-shadow:0 1px 12px rgba(4,8,23,.9)}
+.hero h1,.hero .sub{text-shadow:0 2px 30px rgba(4,8,23,.55)}
+/* thrive rail: desktop pinned horizontal track */
+.motion .rail-sec{min-height:100vh;display:flex;align-items:center;overflow:hidden;padding:90px 0 60px}
+.motion .rail-sec .wrap{width:100%}
+@media (min-width:1001px){
+.motion .dims.rail{display:flex;gap:22px;border:0;margin-top:40px;width:max-content}
+.motion .dims.rail .dim{display:flex;flex-direction:column;align-items:flex-start;gap:14px;width:min(380px,28vw);min-height:290px;padding:30px 28px;border:1px solid rgba(10,18,48,.16);border-radius:12px;background:#fff;box-shadow:0 24px 60px -30px rgba(10,23,64,.35);flex:none}
+.motion .dims.rail .dim:hover{padding-left:28px;background:#fff;transform:translateY(-6px);box-shadow:0 34px 70px -28px rgba(201,138,30,.5)}
+.motion .dims.rail .dim small{font-size:13px}
+.motion .dims.rail .dim p{margin-top:auto}
+}
+/* thrive rail: touch swipe */
+@media (max-width:1000px){
+.dims.rail{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;margin-right:-24px;padding:0 24px 18px 0;border:0;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.dims.rail::-webkit-scrollbar{display:none}
+.dims.rail .dim{display:flex;flex-direction:column;align-items:flex-start;gap:10px;flex:none;width:78vw;max-width:340px;scroll-snap-align:start;padding:26px 22px;border:1px solid rgba(10,18,48,.16);border-radius:12px;background:#fff;box-shadow:0 18px 40px -26px rgba(10,23,64,.4)}
+.dims.rail .dim:hover{padding-left:22px;background:#fff}
+.dims.rail .dim p{margin-top:8px}
+}
+@media (prefers-reduced-motion:reduce){#wipe,#prog,.i-cue i{display:none}}
+
+@keyframes iin{from{opacity:0;transform:translateY(40px)}}
+@keyframes ifade{from{opacity:0}}
+.motion .i-h{animation:iin 1.8s .4s cubic-bezier(.2,.7,.2,1) backwards}
+.motion .i-eye,.motion .i-cue{animation:ifade 1.6s .9s backwards}
+.i-h{color:#fff;text-shadow:0 2px 40px rgba(4,8,23,.9),0 0 50px rgba(217,172,69,.5)}
+.i-eye{text-shadow:0 1px 14px rgba(4,8,23,.9)}
+.cta h2,.cta .eyebrow{text-shadow:0 2px 40px rgba(4,8,23,.95),0 0 12px rgba(4,8,23,.6)}

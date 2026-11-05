@@ -88,6 +88,7 @@
     updateStatements();
     heroInit();
     tick();
+    document.dispatchEvent(new CustomEvent('bcm:route', { detail: { page: h } }));
   }
   function observeReveals() {
     var page = $('.page.show'); if (!page) return;
@@ -223,7 +224,7 @@
   function frame() {
     if (!run) return;
     ctx.clearRect(0, 0, W, H); ctx.globalCompositeOperation = 'lighter';
-    if (!reduce) {
+    if (!reduce && !document.documentElement.classList.contains('has-gl')) {
       for (var i = 0; i < embers.length; i++) {
         var e = embers[i]; e.ph += .02;
         var dx = e.x - mouse.x, dy = e.y - mouse.y, d2 = dx * dx + dy * dy;
@@ -263,7 +264,7 @@
 
   document.addEventListener('click', function (e) {
     var b = e.target.closest && e.target.closest('[data-scroll]'); if (!b) return;
-    var t = document.getElementById(b.getAttribute('data-scroll')); if (t) t.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+    var t = document.getElementById(b.getAttribute('data-scroll')); if (t) { if (window.__lenis) window.__lenis.scrollTo(t, { offset: -70 }); else t.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' }); }
   });
 
   var cb = $('#copyEmail');

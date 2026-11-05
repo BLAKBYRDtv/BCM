@@ -26,6 +26,8 @@
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="cross" viewBox="0 0 32 32"><path d="M13 1h6v9h9v6h-9v15h-6V16H4v-6h9z" fill="#f8e3a0" stroke="#d9ac45" stroke-width="1.2" stroke-linejoin="round"/><path d="M14.4 3v9H6v2.6h8.4V29h3.2V14.6H26V12h-8.4V3z" fill="#fff8dc" opacity=".55"/></symbol>
 </svg>
+<div id="prog" aria-hidden="true"></div><div id="wipe" aria-hidden="true"></div>
+<canvas id="gl" aria-hidden="true"></canvas>
 <canvas id="fx" aria-hidden="true"></canvas>
 <div id="cur" aria-hidden="true"><div class="ring"></div><svg><use href="#cross"/></svg></div>
 
@@ -77,6 +79,7 @@
 
 <!-- ============ HOME ============ -->
 <section class="page" data-page="home">
+  <section class="intro" aria-hidden="true"><p class="i-eye">Believers Choice Ministries</p><h2 class="i-h">Behold.</h2><div class="i-cue"><i></i><span>Scroll</span></div></section>
   <div class="hero">
     <div class="rays"></div>
     <div class="hero-img" data-parallax="0.06"><img src="img/couple.jpg" alt="Pastor Derek Griffin and First Lady Lisa Griffin" fetchpriority="high"></div>
@@ -144,12 +147,12 @@
     </div>
   </section>
 
-  <section class="sec light">
+  <section class="sec light rail-sec">
     <div class="wrap">
       <div class="eyebrow rv">Kingdom living</div>
       <h2 class="h2 rv d1" style="margin-top:22px;max-width:13em">Thrive in every part of life.</h2>
       <p class="lead rv d2" style="margin-top:22px">Through practical, biblical teaching, we equip believers to grow spiritually and to thrive educationally, culturally, civically, and economically.</p>
-      <div class="dims">
+      <div class="dims rail">
         <a href="#ministries" class="dim rv" data-hover><small>I</small><h3>Spiritually</h3><p>Disciple-making rooted in Scripture, prayer, and honest self-examination.</p></a>
         <a href="#ministries" class="dim rv" data-hover><small>II</small><h3>Educationally</h3><p>Mentorship, learning, and scholarship partnerships that open doors for the next generation.</p></a>
         <a href="#ministries" class="dim rv" data-hover><small>III</small><h3>Culturally</h3><p>Knowing who you are in Christ, and celebrating the heritage and gifts you carry.</p></a>
@@ -650,5 +653,11 @@
 </footer>
 
 <script src="js/app.js" charset="utf-8"></script>
+<script src="js/vendor/gsap.min.js" defer></script>
+<script src="js/vendor/ScrollTrigger.min.js" defer></script>
+<script src="js/vendor/SplitText.min.js" defer></script>
+<script src="js/vendor/lenis.min.js" defer></script>
+<script src="js/scene.js" defer></script>
+<script src="js/motion.js" defer></script>
 </body>
 </html>

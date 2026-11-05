@@ -394,3 +394,7 @@ html.lenis{scroll-behavior:auto!important}
 .i-h{color:#fff;text-shadow:0 2px 40px rgba(4,8,23,.9),0 0 50px rgba(217,172,69,.5)}
 .i-eye{text-shadow:0 1px 14px rgba(4,8,23,.9)}
 .cta h2,.cta .eyebrow{text-shadow:0 2px 40px rgba(4,8,23,.95),0 0 12px rgba(4,8,23,.6)}
+
+.i-h{bottom:11vh;font-style:normal;display:flex;flex-direction:column;align-items:center;gap:.04em;font-size:clamp(44px,9.5vw,150px);line-height:.95;color:#fff;text-shadow:0 2px 30px rgba(4,8,23,.95),0 0 14px rgba(4,8,23,.7)}
+.i-h span{display:block}
+.i-h em{display:block;font-style:italic;font-size:.62em;background:linear-gradient(90deg,#c98a1e,#f8e3a0,#c98a1e);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 2px 14px rgba(4,8,23,.9))}
